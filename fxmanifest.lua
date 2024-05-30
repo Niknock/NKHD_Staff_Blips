@@ -11,10 +11,11 @@ client_script{
 	'client.lua',
 	'@es_extended/locale.lua',
 	'config.lua',
-	'locales/*.lua'
+	'locales/*.lua',
 }
 
 server_script{
+	'@es_extended/locale.lua',
 	'config.lua',
 	'locales/*.lua',
 	'server.lua'
@@ -26,5 +27,5 @@ shared_scripts {
 }
 
 dependencies {
-	'es_extended'
+	'es_extended',
 }
