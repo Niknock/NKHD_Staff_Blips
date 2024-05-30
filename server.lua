@@ -8,12 +8,12 @@ else
     print('Wrong ESX Type!')
 end
 
-RegisterCommand(Config.Command, function(source)
+RegisterCommand(Config.BlipsCommand, function(source)
     local xPlayer = ESX.GetPlayerFromId(source)
-    if xPlayer.getGroup() == 'nkhd_staffblips' then
-        TriggerClientEvent('nkhd_staffblips:toggleBlips', source)
+    if xPlayer.getGroup() == 'admin' then
+        TriggerClientEvent('nkhd_staff:toggleBlips', source)
     else
-        TriggerClientEvent('nkhd_staffblips:wrongclass', source)
+        TriggerClientEvent('nkhd_staff:wrongclass', source)
     end
 end, false)
 
