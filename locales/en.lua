@@ -1,7 +1,7 @@
 Locales['en'] = {
-
-    ['wrong_class']					= 'You are not an Admin.',
-    ['blips_on']				    = 'You turned on the blips.',
-    ['blips_off']					= 'You turned off the blips.',
+    
+    ['wrong_class']                = 'You are not and Admin.',
+    ['blips_on']            = 'You turned the blips on',
+    ['blips_off']                  = 'You turned the blips off',
 
 }
