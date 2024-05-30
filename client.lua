@@ -1,13 +1,13 @@
 local showBlips = false
 local playerBlips = {}
 
-RegisterNetEvent('nkhd_staffblips:wrongclass')
-AddEventHandler('nkhd_staffblips:wrongclass', function()
+RegisterNetEvent('nkhd_staff:wrongclass')
+AddEventHandler('nkhd_staff:wrongclass', function()
     ESX.ShowNotification(_U('wrong_class'), 1000, 'error')
 end)
 
-RegisterNetEvent('nkhd_staffblips:toggleBlips')
-AddEventHandler('nkhd_staffblips:toggleBlips', function()
+RegisterNetEvent('nkhd_staff:toggleBlips')
+AddEventHandler('nkhd_staff:toggleBlips', function()
     showBlips = not showBlips
     if showBlips then
         ESX.ShowNotification(_U('blips_on'), 1000, 'success')
